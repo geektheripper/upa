@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" xml:space="preserve">
+<style type="text/css">
+  .c{fill:#00A0E9}
+  .m{fill:#E4007F}
+  .y{fill:#FFF100}
+  .k{fill:#231815}
+</style>
+<title>GeekTR's Avatar - Rotate Version</title>
+<g transform="translate(95 95) rotate(46.7869)">
+  <rect class="c" width="500" height="500" x="-500" y="-500"/>
+  <rect class="m" width="500" height="500" x="-0" y="-500"/>
+  <rect class="y" width="500" height="500" x="-500" y="0"/>
+  <rect class="k" width="500" height="500" x="0" y="0"/>
+  <animateTransform attributeName="transform" begin="0s" dur="60s" type="rotate" from="0 0 0" to="360 0 0" additive="sum" repeatCount="indefinite"/>
+</g>
+</svg>

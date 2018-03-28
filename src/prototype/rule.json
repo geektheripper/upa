@@ -1,0 +1,4 @@
+{
+  "name": "rule-name",
+  "dependenciesParams": ["TEST"],
+}

@@ -1,0 +1,6 @@
+[
+  { "label": "Base Configure", "routeName": "base-application" },
+  { "label": "User Configure", "routeName": "user-configure" },
+  { "label": "SSH Configure", "routeName": "ssh-configure" },
+  { "label": "Install Applications ...", "routeName": "install-applications" }
+]
