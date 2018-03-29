@@ -1,5 +1,5 @@
 export const name = 'Docker Compose'
-export const version = '1.18.0'
+export const version = '1.20.1'
 export const selected = false
 
 export const afterInstall = `

@@ -33,6 +33,10 @@
       <span>IP:</span>
       <input v-model="remote.ip"/>
     </p>
+    <p class="form">
+      <span class="auto">Use Root To Operate Server :</span>
+      <u-switch v-model="remote.usingRoot" />
+    </p>
 
     <h2>0. Generate SSH Key:</h2>
     <shell :shell="generateSSHKey" :sudo="false" />
@@ -53,10 +57,6 @@
       <u-switch v-model="localSSHConfigPlainText" />
     </p>
     <shell :shell="configureLocalSSHConfig" :sudo="false" />
-
-    <h2>3. Setup Remote Desktop</h2>
-    <shell :shell="null" :sudo="false" />
-
   </div>
 </template>
 
@@ -81,6 +81,7 @@ export default {
         ip: 'geektr.me',
         user: 'geektr',
         root: true,
+        usingRoot: true,
       },
       localSSHConfigPlainText: false,
       forbidPasswordLogin: true,
@@ -93,6 +94,16 @@ export default {
     },
     'remote.host': function (value) {
       this.remote.ip = value
+    },
+    'remote.usingRoot': function (value) {
+      if (!value) {
+        this.remote.root = false
+      }
+    },
+    'remote.root': function (value) {
+      if (value) {
+        this.remote.usingRoot = true
+      }
     },
   },
   computed: {

@@ -7,7 +7,7 @@ IOSEVKA_VER=${version}
 IOSEVKA_URL="https://github.com/be5invis/Iosevka/releases/download/v$IOSEVKA_VER/02-iosevka-term-$IOSEVKA_VER.zip"
 
 # Download: ${name}
-wget -o /tmp/iosevka.zip "$IOSEVKA_URL"
+wget -O /tmp/iosevka.zip "$IOSEVKA_URL"
 mkdir -p /tmp/iosevka
 unzip /tmp/iosevka.zip -d /tmp/iosevka
 

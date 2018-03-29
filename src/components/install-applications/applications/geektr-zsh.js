@@ -5,5 +5,5 @@ export const geektr = true
 
 export const afterInstall = `
 # Config: ${name}
-wget -o "/home/$USER_HOME/.zshrc" "$STATIC_PREFIX/config/zsh/.zshrc"
+wget -O "/home/$USER_NAME/.zshrc" "$STATIC_PREFIX/zsh/geektr.zshrc"
 `

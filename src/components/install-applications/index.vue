@@ -61,7 +61,9 @@ STATIC_PREFIX=${location.origin}/static/upa
 USER_NAME=${this.config.userName}
 `
       apps.forEach(({ beforeUpdate }) => { if (beforeUpdate) shell += beforeUpdate })
-
+      shell += `
+sudo apt-get update
+`
       const aptInstalls = apps
         .map(({ aptInstall }) => aptInstall)
         .filter(item => item)

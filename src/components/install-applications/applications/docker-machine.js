@@ -1,5 +1,5 @@
 export const name = 'Docker Machine'
-export const version = '0.13.0'
+export const version = '0.14.0'
 export const selected = false
 
 export const afterInstall = `
